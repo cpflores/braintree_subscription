@@ -1,0 +1,20 @@
+<h1>Sign up</h1>
+<%= form_for :user do |f| %>
+  <%= f.lable :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.lable :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.lable :email %>
+  <%= f.text_field :email %>
+
+  <%= f.lable :password %>
+  <%= f.text_field :password %>
+
+  <%= f.lable :password_confirmation %>
+  <%= f.text_field :password_confirmation %>
+
+  <%= f.submit "Create account" %>
+
+<% end %>
